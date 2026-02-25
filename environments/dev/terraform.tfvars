@@ -1,0 +1,5 @@
+aws_region   = "us-east-1"
+owner        = "bakez"
+project_name = "sandbox"
+environment  = "dev"
+vpc_cidr     = "10.42.0.0/16"
