@@ -1,5 +1,5 @@
 output "vpc_id" {
-  value = aws_vpc.main.id
+  value = aws_vpc.this.id
 }
 
 output "public_subnets" {
@@ -14,4 +14,16 @@ output "private_subnets" {
     aws_subnet.private_a.id,
     aws_subnet.private_b.id
   ]
+}
+
+output "public_sg_id" {
+  value = aws_security_group.public.id
+}
+
+output "app_sg_id" {
+  value = aws_security_group.app.id
+}
+
+output "db_sg_id" {
+  value = aws_security_group.db.id
 }
